@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "Anet" 3D Printer Boards,
+          "name": "Anet 3D Printer Boards",
           "architecture": "avr",
           "version": "1.0",
           "category": "Contributed",
