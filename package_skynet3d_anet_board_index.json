@@ -22,7 +22,7 @@
           "checksum": "SHA-256:c871dec9a98759096b5710bd8468c828676fa8451c79ae60f6c76ed0952a0f92",
           "size": "46649",
           "boards": [
-            {"name": "Anet V1.0"}
+            {"name": "Anet V1.0"},
             {"name": "Anet V1.0 (Optiboot)"}
           ],
           "toolsDependencies": [
