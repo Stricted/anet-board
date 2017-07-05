@@ -17,10 +17,10 @@
           "help": {
             "online": "https://github.com/SkyNet3D/anet-board"
           },
-          "url": "https://github.com/SkyNet3D/anet-board/archive/master.zip",
-          "archiveFileName": "anet-board-master.zip",
-          "checksum": "SHA-256:c871dec9a98759096b5710bd8468c828676fa8451c79ae60f6c76ed0952a0f92",
-          "size": "46649",
+          "url": "https://github.com/benlye/anet-board/archive/board-manager.zip",
+          "archiveFileName": "anet-board-board-manager.zip",
+          "checksum": "SHA-256:d49acb001b3c965c0811f0be07451db1b38268b5d9f601b755372194e812fefc",
+          "size": "43902",
           "boards": [
             {"name": "Anet V1.0"},
             {"name": "Anet V1.0 (Optiboot)"}
