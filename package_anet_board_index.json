@@ -1,0 +1,34 @@
+{
+  "packages": [
+    {
+      "name": "anet",
+      "maintainer": "Ben Lye",
+      "websiteURL": "https://github.com/benlye/anet-board",
+      "email": "ben@lye.co.nz",
+      "help": {
+        "online": "https://github.com/benlye/anet-board"
+      },
+      "platforms": [
+        {
+          "name": "Anet 3D Printer Boards",
+          "architecture": "avr",
+          "version": "1.0.1",
+          "category": "Contributed",
+          "help": {
+            "online": "https://github.com/benlye/anet-board"
+          },
+          "url": "https://github.com/benlye/anet-board/raw/master/archives/anet_board_v1.0.1.tar.gz",
+          "archiveFileName": "anet_board_v1.0.1.tar.gz",
+          "checksum": "SHA-256:92309f0a36de2c3284095dcc1e13b0e65fce6967ecff60500a2bba20d82cfc52",
+          "size": "7679",
+          "boards": [
+            {"name": "Anet V1.0"},
+            {"name": "Anet V1.0 (Optiboot)"}
+          ],
+          "toolsDependencies": []
+        }
+      ],
+      "tools": []
+    }
+  ]
+}
