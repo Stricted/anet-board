@@ -6,25 +6,25 @@ This project provides a board definition which enables the Arduino IDE to compil
 1. Download and install the most recent version from the 1.8.x branch of the Arduino IDE from 
    https://www.arduino.cc/en/main/software
 
-1. Launch the Arduino IDE
+2. Launch the Arduino IDE
 
-1. Open the Arduino IDE Preferences by selecting **File -> Preferences**, or pressing **Ctrl + Comma**
+3. Open the Arduino IDE Preferences by selecting **File -> Preferences**, or pressing **Ctrl + Comma**
 
-1. Locate the **Aditional Boards Manager URLs** field and paste in this URL: 
+4. Locate the **Aditional Boards Manager URLs** field and paste in this URL: 
 
 `https://github.com/benlye/anet-board/raw/master/package_anet_board_index.json`
 
 **Note:** Multiple URLs are comma-separated.
 
-1. Click **OK** to save the change
+5. Click **OK** to save the change
 
-1. Click **Tools -> Board -> Boards Manager**
+6. Click **Tools -> Board -> Boards Manager**
 
-1. Type **anet** into the search box to see the Anet board package
+7. Type **anet** into the search box to see the Anet board package
 
-1. Click on the Anet board and click the **Install** button.
+8. Click on the Anet board and click the **Install** button.
 
-1. Click **Close** to close the Boards Manager
+9. Click **Close** to close the Boards Manager
 
 ## Using the Board Definition
 1. Open the Arduino IDE
