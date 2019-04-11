@@ -26,9 +26,28 @@
             {"name": "Anet V1.0 (Optiboot)"}
           ],
           "toolsDependencies": []
+        },
+        {
+          "name": "Anet 3D Printer Boards",
+          "architecture": "avr",
+          "version": "1.0.2",
+          "category": "Contributed",
+          "help": {
+            "online": "https://github.com/benlye/anet-board"
+          },
+          "url": "https://github.com/benlye/anet-board/raw/master/archives/anet_board_v1.0.2.tar.gz",
+          "archiveFileName": "anet_board_v1.0.2.tar.gz",
+          "checksum": "SHA-256:4b5c37ad062bc5e008dff72d097ded171cdff9e9b508c6220974684cb7452619",
+          "size": "7571",
+          "boards": [
+            {"name": "Anet V1.0"},
+            {"name": "Anet V1.0 (Optiboot)"}
+          ],
+          "toolsDependencies": []
         }
       ],
       "tools": []
     }
   ]
 }
+
