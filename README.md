@@ -3,7 +3,7 @@ This project provides a board definition which enables the Arduino IDE to compil
 
 ## Installation Instructions
 
-1. Download and install the most recent version from the 1.8.x branch of the Arduino IDE from 
+1. Download and install the most Arduino IDE from 
    https://www.arduino.cc/en/main/software
 
 2. Launch the Arduino IDE
