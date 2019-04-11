@@ -36,23 +36,6 @@
 #define NOT_A_PORT 0
 
 #define NOT_ON_TIMER 0
-#define TIMER0A 1
-#define TIMER0B 2
-#define TIMER1A 3
-#define TIMER1B 4
-#define TIMER2  5
-#define TIMER2A 6
-#define TIMER2B 7
-
-#define TIMER3A 8
-#define TIMER3B 9
-#define TIMER3C 10
-#define TIMER4A 11
-#define TIMER4B 12
-#define TIMER4C 13
-#define TIMER5A 14
-#define TIMER5B 15
-#define TIMER5C 16
 
 const static uint8_t SS   = 4;
 const static uint8_t MOSI = 5;
@@ -72,42 +55,34 @@ static const uint8_t A5 = 26;
 static const uint8_t A6 = 25;
 static const uint8_t A7 = 24;
 
-// On the ATmega1280, the addresses of some of the port registers are
-// greater than 255, so we can't store them in uint8_t's.
-// extern const uint16_t PROGMEM port_to_mode_PGM[];
-// extern const uint16_t PROGMEM port_to_input_PGM[];
-// extern const uint16_t PROGMEM port_to_output_PGM[];
-
-// extern const uint8_t PROGMEM digital_pin_to_port_PGM[];
-// extern const uint8_t PROGMEM digital_pin_to_bit_PGM[];
-// extern const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[];
-// extern const uint8_t PROGMEM digital_pin_to_timer_PGM[];
-
-// ATMEL ATMEGA644P / SANGUINO
+// ATMEL ATMEGA1284 TQFP/QFM/MLF 44pin (SANGUINO Pinout PA0..PA7 > D31..D24)
 //
-//                   +---\/---+
-//  INT0 (D 0) PB0  1|        |40  PA0 (AI 0 / D31)
-//  INT1 (D 1) PB1  2|        |39  PA1 (AI 1 / D30)
-//  INT2 (D 2) PB2  3|        |38  PA2 (AI 2 / D29)
-//   PWM (D 3) PB3  4|        |37  PA3 (AI 3 / D28)
-//   PWM (D 4) PB4  5|        |36  PA4 (AI 4 / D27)
-//  MOSI (D 5) PB5  6|        |35  PA5 (AI 5 / D26)
-//  MISO (D 6) PB6  7|        |34  PA6 (AI 6 / D25)
-//   SCK (D 7) PB7  8|        |33  PA7 (AI 7 / D24)
-//             RST  9|        |32  AREF
-//             VCC 10|        |31  GND
-//             GND 11|        |30  AVCC
-//           XTAL2 12|        |29  PC7 (D 23)
-//           XTAL1 13|        |28  PC6 (D 22)
-//  RX0 (D 8)  PD0 14|        |27  PC5 (D 21) TDI
-//  TX0 (D 9)  PD1 15|        |26  PC4 (D 20) TDO
-//  RX1 (D 10) PD2 16|        |25  PC3 (D 19) TMS
-//  TX1 (D 11) PD3 17|        |24  PC2 (D 18) TCK
-//  PWM (D 12) PD4 18|        |23  PC1 (D 17) SDA
-//  PWM (D 13) PD5 19|        |22  PC0 (D 16) SCL
-//  PWM (D 14) PD6 20|        |21  PD7 (D 15) PWM
-//                   +--------+
-//
+//                        +-----------------+
+//     MOSI (D 5)  PB5   6|O                |44  PB4 (D 4) PWM
+//     MISO (D 6)  PB6   2|                 |43  PB3 (D 3) PWM
+//      SCK (D 7)  PB7   3|                 |42  PB2 (D 2)     INT2
+//                 RST   4|                 |41  PB1 (D 1)
+//                 VCC   5|                 |40  PB0 (D 0)
+//                 GND   6|                 |39  GND
+//               XTAL2   7|                 |38  VCC
+//               XTAL1   8|                 |37  PA0 (AI 0 / D31)
+//      RX0 (D 8)  PD0   9|                 |36  PA1 (AI 1 / D30)
+//      TX0 (D 9)  PD1  10|                 |35  PA2 (AI 2 / D29)
+// INT0 RX1 (D 10) PD2  11|                 |34  PA3 (AI 3 / D28)
+//                        |                 |33  PA4 (AI 4 / D27)
+// INT1 TX1 (D 11) PD3  12|                 |
+//      PWM (D 12) PD4  13|                 |32  PA5 (AI 5 / D26)
+//      PWM (D 13) PD5  14|                 |31  PA6 (AI 6 / D25)
+//      PWM (D 14) PD6  15|                 |30  PA7 (AI 7 / D24)
+//      PWM (D 15) PD7  16|                 |29  AREF
+//                 VCC  17|                 |28  GND
+//                 GND  18|                 |27  AVCC
+//      SCL (D 16) PC0  19|                 |26  PC7 (D 23)
+//      SDA (D 17) PC1  20|                 |25  PC6 (D 22)
+//      TCK (D 18) PC2  21|                 |24  PC5 (D 21) TDI
+//      TMS (D 19) PC3  22|                 |23  PC4 (D 20) TDO
+//                        +-----------------+
+
 #define NUM_DIGITAL_PINS            32
 #define NUM_ANALOG_INPUTS           8
 #define analogInputToDigitalPin(p) ((p < 8) ? 31 - (p): -1)
